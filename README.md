@@ -10,12 +10,12 @@ A mall wants to understand its customer base to optimize marketing strategies. T
 
 ## Approach
 
-1. **Data cleaning and preprocessing** — checked for missing values and duplicates (none found), encoded the Gender column for reference.
-2. **Exploratory Data Analysis** — examined the distributions of age, income, spending score, and gender, and looked at pairwise relationships between them.
-3. **Model building and evaluation** — standardized the features (Age, Annual Income, Spending Score) and ran K-Means across K=2 through K=10, evaluating each with the Elbow Method (inertia) and Silhouette Score.
-4. **Final clustering** — fit K-Means with K=5 to produce five customer segments, then profiled each by average age, income, and spending score.
-5. **Dimensionality reduction** — projected the scaled features into 2D using both PCA and t-SNE to visually confirm cluster separation.
-6. **Marketing strategy mapping** — translated each segment's profile into a targeted marketing approach.
+1. **Data cleaning and preprocessing** : checked for missing values and duplicates (none found), encoded the Gender column for reference.
+2. **Exploratory Data Analysis** : examined the distributions of age, income, spending score, and gender, and looked at pairwise relationships between them.
+3. **Model building and evaluation** : standardized the features (Age, Annual Income, Spending Score) and ran K-Means across K=2 through K=10, evaluating each with the Elbow Method (inertia) and Silhouette Score.
+4. **Final clustering** : fit K-Means with K=5 to produce five customer segments, then profiled each by average age, income, and spending score.
+5. **Dimensionality reduction** : projected the scaled features into 2D using both PCA and t-SNE to visually confirm cluster separation.
+6. **Marketing strategy mapping** : translated each segment's profile into a targeted marketing approach.
 
 ## Results and Findings
 
@@ -61,16 +61,4 @@ Cluster 2 (high income, high spending) is the priority segment for retention. Cl
 
 Python, pandas, NumPy, scikit-learn (KMeans, PCA, t-SNE, StandardScaler, silhouette_score), matplotlib, seaborn
 
-## Repository Structure
 
-```
-mall-customer-segmentation-kmeans/
-├── customer_segmentation.ipynb
-├── Mall_Customers.csv
-├── Exploratory_data_Analysis.png
-├── fig_2.png
-├── k_means.png
-├── Dimensionality_reduction.png
-├── Customer_seg_marketing_strategy.png
-└── README.md
-```
